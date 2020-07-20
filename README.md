@@ -15,4 +15,4 @@
 
   ![QR Code Generator Preview](.github/images/screenshot.png)
 
-### But you can also test by yourself <a href="qrcode-generator.surge.sh">here</a> ;)
+### But you can also test by yourself <a href="http://qrcode-generator.surge.sh">here</a> ;)
