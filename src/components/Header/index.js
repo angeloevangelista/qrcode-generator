@@ -1,7 +1,7 @@
 import React from "react";
 import { GiAtom } from "react-icons/gi/";
 
-import { Container, Content, QRLogo } from "./style";
+import { Container, Content, QRLogo } from "./style.js";
 
 export default function Header() {
   return (
