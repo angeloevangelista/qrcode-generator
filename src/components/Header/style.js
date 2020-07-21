@@ -1,8 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-import { dark } from '../../styles/colors';
+import { dark } from "../../styles/colors";
 
 const colorSchema = dark;
+
+const rotation = keyframes`
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+}`;
 
 export const Container = styled.header`
   height: 64px;
@@ -21,21 +30,11 @@ export const Content = styled.div`
   font-size: 22px;
 
   a {
-  color: ${colorSchema.fontPrimary};
-}
-
-  @keyframes rotation {
-    0% {
-      transform: rotate(0);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
+    color: ${colorSchema.fontPrimary};
   }
 
   svg {
-    animation: rotation 10s linear infinite;
+    animation: ${rotation} 10s linear infinite;
   }
 `;
 
