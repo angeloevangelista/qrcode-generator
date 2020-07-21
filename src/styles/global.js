@@ -16,7 +16,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: ${colorSchema.secondary};
   }
 `;

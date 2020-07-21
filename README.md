@@ -15,6 +15,4 @@
 
 ![QR Code Generator Preview](.github/images/screenshot.png)
 
-### But you can also test by yourself <a href="http://qrcode-generator.surge.sh">here</a> ;)
-
-##### Unfortunately this preview isn't loading the styles... but I'm trying to fix that 
+### But you can also test by yourself <a href="https://qrcode-generator-swart.vercel.app/">here</a> ;)
