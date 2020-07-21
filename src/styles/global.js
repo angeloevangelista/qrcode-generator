@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 import { dark } from './colors';
 
+const colorSchema = dark;
+
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
     
@@ -15,6 +17,6 @@ export default createGlobalStyle`
 
   body {
     font-family: Roboto, sans-serif;
-    background: ${dark.secondary};
+    background: ${colorSchema.secondary};
   }
 `;

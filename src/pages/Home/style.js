@@ -1,12 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { dark } from '../../styles/colors';
-
-// const colorSchema = (props) => (props.dark ? dark : light);
+import { dark } from "../../styles/colors";
 
 const colorSchema = dark;
 
-const mediaWidthSize = '800px';
+const mediaWidthSize = "800px";
 
 export const Container = styled.div`
   padding: 0 20px;
@@ -92,6 +90,8 @@ export const Input = styled.textarea`
   padding: 20px;
   font-size: 20px;
   border: 0;
+  color: ${colorSchema.fontPrimary};
+  background: ${colorSchema.secondary};
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 

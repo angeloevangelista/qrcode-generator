@@ -8,8 +8,8 @@ export const dark = {
 
 export const light = {
   primary: '#ffffff',
-  secondary: '#f9f9f9',
-  background: '#909090',
+  secondary: '#e1e1e1',
+  background: '#f9f9f9',
   fontPrimary: '#030303',
   fontSecondary: '#222',
 };
