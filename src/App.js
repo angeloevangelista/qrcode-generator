@@ -22,4 +22,6 @@ function App() {
   );
 }
 
+console.log('Visit the repo clicking the Logo ;)');
+
 export default App;

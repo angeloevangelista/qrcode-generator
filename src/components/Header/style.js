@@ -37,7 +37,11 @@ export const Content = styled.div`
   }
 `;
 
-export const QRLogo = styled.div`
+export const QRLogo = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
   span:first-child {
     color: ${(props) => props.theme.fontSecondary};
     font-weight: 100;

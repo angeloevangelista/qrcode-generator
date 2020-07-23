@@ -5,9 +5,9 @@ import { RiMoonClearLine } from 'react-icons/ri/';
 
 import { Container, Content, QRLogo } from './style.js';
 
-import { setTheme } from '../../store/modules/theme/actions';
-
 import { dark, light } from '../../styles/colors';
+
+import { setTheme } from '../../store/modules/theme/actions';
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <Container>
       <Content>
-        <QRLogo>
+        <QRLogo href="https://github.com/angeloevangelista/qrcode-generator">
           <span>QR</span>
           <strong>Code</strong>
           <span>Generator</span>
