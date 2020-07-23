@@ -33,7 +33,7 @@ export const Content = styled.div`
   }
 
   svg {
-    animation: ${rotation} 10s linear infinite;
+    /* animation: ${rotation} 10s linear infinite; */
   }
 `;
 
