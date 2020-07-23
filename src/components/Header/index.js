@@ -13,9 +13,9 @@ export default function Header() {
           <span>Generator</span>
         </QRLogo>
 
-        <a href="https://github.com/angeloevangelista/qrcode-generator">
-          <GiAtom size={32} title="Hey! Este app foi construído com ReactJs" />
-        </a>
+        <button type="button">
+          <GiAtom size={32} title="Hey! Visit the repo in the console" />
+        </button>
       </Content>
     </Container>
   );

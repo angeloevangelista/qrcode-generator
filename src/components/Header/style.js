@@ -1,8 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-import { dark } from "../../styles/colors";
-
-const colorSchema = dark;
+import styled, { keyframes } from 'styled-components';
 
 const rotation = keyframes`
   0% {
@@ -15,7 +11,7 @@ const rotation = keyframes`
 
 export const Container = styled.header`
   height: 64px;
-  background: ${colorSchema.primary};
+  background: ${(props) => props.theme.primary};
 `;
 
 export const Content = styled.div`
@@ -26,11 +22,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  color: ${colorSchema.fontPrimary};
+  color: ${(props) => props.theme.fontPrimary};
   font-size: 22px;
 
-  a {
-    color: ${colorSchema.fontPrimary};
+  button {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    color: ${(props) => props.theme.fontPrimary};
   }
 
   svg {
@@ -40,7 +39,7 @@ export const Content = styled.div`
 
 export const QRLogo = styled.div`
   span:first-child {
-    color: ${colorSchema.fontSecondary};
+    color: ${(props) => props.theme.fontSecondary};
     font-weight: 100;
   }
 
@@ -49,7 +48,7 @@ export const QRLogo = styled.div`
   }
 
   span:last-child {
-    color: ${colorSchema.fontSecondary};
+    color: ${(props) => props.theme.fontSecondary};
     font-size: 14px;
   }
 `;

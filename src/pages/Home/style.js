@@ -1,10 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { dark } from "../../styles/colors";
-
-const colorSchema = dark;
-
-const mediaWidthSize = "800px";
+const mediaWidthSize = '800px';
 
 export const Container = styled.div`
   padding: 0 20px;
@@ -18,9 +14,9 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  background: ${colorSchema.background};
+  background: ${(props) => props.theme.background};
   border-radius: 4px;
-  color: ${colorSchema.fontPrimary};
+  color: ${(props) => props.theme.fontPrimary};
 
   div:first-child {
     display: flex;
@@ -90,8 +86,8 @@ export const Input = styled.textarea`
   padding: 20px;
   font-size: 20px;
   border: 0;
-  color: ${colorSchema.fontPrimary};
-  background: ${colorSchema.secondary};
+  color: ${(props) => props.theme.fontPrimary};
+  background: ${(props) => props.theme.secondary};
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
@@ -132,10 +128,10 @@ export const DownloadButton = styled.button`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  background: ${colorSchema.primary};
-  color: ${colorSchema.fontPrimary};
+  background: ${(props) => props.theme.primary};
+  color: ${(props) => props.theme.fontPrimary};
 
   &:hover {
-    background: ${colorSchema.secondary};
+    background: ${(props) => props.theme.secondary};
   }
 `;
