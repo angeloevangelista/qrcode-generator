@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { RiEmotionHappyLine } from 'react-icons/ri';
 import QRCode from 'qrcode.react';
 import saveSvgAsPng from 'save-svg-as-png';
@@ -20,6 +20,12 @@ const imageOptions = {
 
 export default function Home() {
   const [text, setText] = useState('');
+
+  useEffect(() => {
+    const appUrl = process.env.REACT_APP_URL || '';
+
+    setText(appUrl);
+  }, []);
 
   function handleDownloadClick() {
     saveSvgAsPng.saveSvgAsPng(
